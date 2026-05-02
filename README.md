@@ -1,88 +1,88 @@
-#  Projeto de Engenharia de Dados com Databricks
+# 🚀 Pipeline de Engenharia de Dados com Databricks (Arquitetura Medalhão)
+
+## 📌 Visão Geral
+Este projeto demonstra a construção de um pipeline completo de engenharia de dados utilizando o conceito de **arquitetura medalhão (Bronze, Silver e Gold)** no Databricks.
+
+O objetivo é transformar dados brutos em informações analíticas prontas para consumo em ferramentas de BI.
+
+---
 
 ## 🏗️ Arquitetura
 
 ![Arquitetura](docs/arquitetura.png)
 
+Fluxo de dados:
 
-##  Objetivo
-Desenvolver um pipeline de dados completo utilizando arquitetura medalhão (Bronze, Silver e Gold), com foco em boas práticas de engenharia de dados.
-
----
-
-##  Arquitetura
-
-O projeto segue o modelo:
-
-CSV → Bronze → Silver → Gold → BI
+CSV → Bronze → Silver → Gold → Power BI
 
 ---
 
-##  Camadas
-
-###  Bronze (Dados Brutos)
-- Ingestão de arquivo CSV
-- Armazenamento em Delta Lake
-- Inclusão de metadados (ingestion_timestamp, source_file)
+## 🥉 Camada Bronze (Ingestão)
+- Leitura de arquivo CSV
+- Armazenamento em formato Delta Lake
+- Inclusão de metadados:
+  - ingestion_timestamp
+  - source_file
 
 ---
 
-###  Silver (Dados Tratados)
+## 🥈 Camada Silver (Tratamento)
 - Remoção de duplicidades
 - Tratamento de valores nulos
-- Padronização de colunas
-- Conversão de tipos
-- Criação de coluna derivada (total_value)
+- Padronização de nomes de colunas
+- Conversão de tipos de dados
+- Criação da coluna `total_value`
 
 ---
 
-###  Gold (Dados Analíticos)
-- Criação de KPIs:
+## 🥇 Camada Gold (Consumo)
+- Criação de métricas de negócio:
   - Faturamento total
-  - Ticket médio
   - Quantidade vendida
-- Agregações por tempo e produto
+  - Ticket médio
+- Agregações por:
+  - Tempo
+  - Produto
 
 ---
 
-##  Modelagem Dimensional
+## ⭐ Modelagem Dimensional (Star Schema)
 
-Criação de modelo Star Schema:
+- **Fato:**
+  - fato_vendas
 
-- Fato: fato_vendas
-- Dimensões:
+- **Dimensões:**
   - dim_produto
   - dim_cliente
   - dim_tempo
 
 ---
 
-##  Tecnologias Utilizadas
+## ⚙️ Tecnologias Utilizadas
 
 - Databricks
-- Apache Spark
+- Apache Spark (PySpark)
 - Delta Lake
 - Unity Catalog
 
 ---
 
-##  Diferenciais
+## 🚀 Boas Práticas Aplicadas
 
-- Uso de arquitetura medalhão
-- Implementação de carga incremental (MERGE)
+- Arquitetura medalhão
+- Separação por camadas
+- Uso de Delta Lake
+- Carga incremental com MERGE
 - Otimização com OPTIMIZE e ZORDER
-- Boas práticas de engenharia de dados
 
 ---
 
-##  Possível uso
+## 📊 Possível Uso
 
-Os dados podem ser consumidos por ferramentas como Power BI para análise de vendas.
+Este pipeline pode ser utilizado como base para construção de dashboards no Power BI, permitindo análises de vendas e indicadores estratégicos.
 
 ---
 
-##  Autor
+## 👨‍💻 Autor
 
-José Rodrigues
-
-
+Jose Rodrigues
