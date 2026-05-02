@@ -1,5 +1,10 @@
 #  Projeto de Engenharia de Dados com Databricks
 
+## 🏗️ Arquitetura
+
+![Arquitetura](docs/arquitetura.png)
+
+
 ##  Objetivo
 Desenvolver um pipeline de dados completo utilizando arquitetura medalhão (Bronze, Silver e Gold), com foco em boas práticas de engenharia de dados.
 
