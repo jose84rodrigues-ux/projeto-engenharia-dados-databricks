@@ -1,13 +1,13 @@
-# 🚀 Pipeline de Engenharia de Dados com Databricks (Arquitetura Medalhão)
+#  Pipeline de Engenharia de Dados com Databricks (Arquitetura Medalhão)
 
-## 📌 Visão Geral
+##  Visão Geral
 Este projeto demonstra a construção de um pipeline completo de engenharia de dados utilizando o conceito de **arquitetura medalhão (Bronze, Silver e Gold)** no Databricks.
 
 O objetivo é transformar dados brutos em informações analíticas prontas para consumo em ferramentas de BI.
 
 ---
 
-## 🏗️ Arquitetura
+##  Arquitetura
 
 ![Arquitetura](docs/arquitetura.png)
 
@@ -17,7 +17,7 @@ CSV → Bronze → Silver → Gold → Power BI
 
 ---
 
-## 🥉 Camada Bronze (Ingestão)
+##  Camada Bronze (Ingestão)
 - Leitura de arquivo CSV
 - Armazenamento em formato Delta Lake
 - Inclusão de metadados:
@@ -26,7 +26,7 @@ CSV → Bronze → Silver → Gold → Power BI
 
 ---
 
-## 🥈 Camada Silver (Tratamento)
+##  Camada Silver (Tratamento)
 - Remoção de duplicidades
 - Tratamento de valores nulos
 - Padronização de nomes de colunas
@@ -35,7 +35,7 @@ CSV → Bronze → Silver → Gold → Power BI
 
 ---
 
-## 🥇 Camada Gold (Consumo)
+##  Camada Gold (Consumo)
 - Criação de métricas de negócio:
   - Faturamento total
   - Quantidade vendida
@@ -46,7 +46,7 @@ CSV → Bronze → Silver → Gold → Power BI
 
 ---
 
-## ⭐ Modelagem Dimensional (Star Schema)
+##  Modelagem Dimensional (Star Schema)
 
 - **Fato:**
   - fato_vendas
@@ -58,7 +58,7 @@ CSV → Bronze → Silver → Gold → Power BI
 
 ---
 
-## ⚙️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 - Databricks
 - Apache Spark (PySpark)
@@ -67,7 +67,7 @@ CSV → Bronze → Silver → Gold → Power BI
 
 ---
 
-## 🚀 Boas Práticas Aplicadas
+##  Boas Práticas Aplicadas
 
 - Arquitetura medalhão
 - Separação por camadas
@@ -77,12 +77,12 @@ CSV → Bronze → Silver → Gold → Power BI
 
 ---
 
-## 📊 Possível Uso
+##  Possível Uso
 
 Este pipeline pode ser utilizado como base para construção de dashboards no Power BI, permitindo análises de vendas e indicadores estratégicos.
 
 ---
 
-## 👨‍💻 Autor
+##  Autor
 
 Jose Rodrigues
