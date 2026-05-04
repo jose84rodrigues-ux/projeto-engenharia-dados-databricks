@@ -99,7 +99,7 @@ O dashboard foi desenvolvido com o objetivo de analisar os dados de vendas de fo
 Principais medidas utilizadas:
 
 ```DAX
-Faturamento Total = SUM(fato_vendas[total_value])
+Total Vendas = SUM(fato_vendas[total_value])
 
 Quantidade Vendida = SUM(fato_vendas[quantity])
 
