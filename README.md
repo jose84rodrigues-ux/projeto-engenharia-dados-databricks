@@ -82,13 +82,13 @@ O dashboard foi desenvolvido com o objetivo de analisar os dados de vendas de fo
 
 ---
 
-###  Análise Detalhada
+###  Glossário
 
 ![Detalhe](docs/dashboard_detalhe.png)
 
 ---
 
-###  Modelo de Dados
+###  Modelagem e arquitetura de Dados
 
 ![Modelo](docs/modelo_dados.png)
 
