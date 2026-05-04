@@ -76,7 +76,8 @@ O dashboard foi desenvolvido com o objetivo de analisar os dados de vendas de fo
 
 ###  Visão Geral
 
-![Dashboard](docs/dashboard_overview.png)
+[Dashboard](docs/dashboard_overview.png)
+
 
 ---
 
